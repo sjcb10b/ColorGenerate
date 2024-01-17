@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>JavaScript Color Changing App</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL8GH10N6G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CL8GH10N6G');
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.9rem;
+
+        }
+
+        #main_wrapper {
+            position: relative;
+        }
+
+        #main_wrapper_bg {
+            opacity: 1;
+            width: 100%;
+            height: 295px;
+            padding-bottom: 11em;
+            background-color: #f7f4f4a2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+        }
+
+
+
+        .title {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1 0 18%;
+            /* The important bit. This percentage decides your columns. 
+            The percent can be px. It just represents your minimum starting width.
+           
+            margin: 5px;
+            background: tomato;
+            height: 50px;
+            color: white;
+            display: flex;
+             */
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        #top {
+            margin-top: 10px;
+        }
+
+        #box1 {
+            background-color: #0a0a23;
+        }
+
+        #box2 {
+            background-color: #0a0a23;
+        }
+
+        #box3 {
+            background-color: #0a0a23;
+        }
+
+        #box4 {
+            background-color: #0a0a23;
+        }
+
+        #box5 {
+            background-color: #0a0a23;
+        }
+
+        #box55 {
+            background-color: #0a0a23;
+        }
+
+        #box55f {
+            background-color: #0a0a23;
+        }
+
+        #newnav {
+            background-color: #0a0a23;
+        }
+
+
+        #text1,
+        #text2,
+        #text3,
+        #text4,
+        #text5 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 600;
+        }
+
+        #titleMain {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.9rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="main_wrapper" class="active container">
+
+        <div id="main_wrapper_bg">
+
+            <div class="container" id="top"></div>
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="title"> Choose your color Template</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div id="box1" class="card text-dark   mb-3" style="max-width: 18rem;">
+
+                            <div class="card-body" style="width:120px; height: 120px;">
+                            </div>
+                        </div>
+                        <div id="text1">#0a0a23</div>
+                    </div>
+                    <div class="col">
+                        <div id="box2" class="card text-white mb-3" style="max-width: 18rem;">
+
+                            <div class="card-body" style="width:120px; height: 120px;">
+
+                            </div>
+                        </div>
+                        <div id="text2">#0a0a23</div>
+                    </div>
+                    <div class="col">
+                        <div id="box3" class="card text-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-body" style="width:120px; height: 120px;">
+                            </div>
+                        </div>
+                        <div id="text3">#0a0a23</div>
+                    </div>
+                    <div class="col">
+                        <div id="box4" class="card text-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-body" style="width:120px; height: 120px;">
+                            </div>
+                        </div>
+                        <div id="text4">#0a0a23</div>
+                    </div>
+
+
+                    <div class="col">
+                        <div id="box5" class="card text-dark mb-3" style="max-width: 18rem;">
+
+                            <div class="card-body" style="width:120px; height: 120px;">
+
+                            </div>
+                        </div>
+                        <div id="text5">#0a0a23</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="button">GENERATE</button>
+
+        </div>
+    </div> <!--/ end wrapper-->
+
+
+
+    <div id="box55" class="p-5  text-white text-center" style="margin-top: 300px;">
+        <h1 id="titleMain">Color Combination</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <nav id="newnav" class="navbar navbar-expand-sm text-center  navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 id="titleaboutme">About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h3 id="titleaboutme2">Some Links</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2 id="titleHeading">TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2020</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+
+                <h2 id="titleHeading2">TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2020</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="box55f" class="mt-5 p-4  text-white text-center">
+        <p>Footer</p>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="myap2.js"></script>
+</body>
+
+</html>

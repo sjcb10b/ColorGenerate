@@ -1,0 +1,13 @@
+#button {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 15px auto 50px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #ff00ff;
+  border-radius: 5px;
+  border-style: none;
+  display: block;
+}
